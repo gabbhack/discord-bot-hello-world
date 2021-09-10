@@ -17,4 +17,4 @@ RUN set +x \
 # Add code & install dependencies
 ADD . /app/
 RUN poetry install -n --no-dev
-CMD ["python -O -m bot"]
+ENTRYPOINT [ "python" ]
