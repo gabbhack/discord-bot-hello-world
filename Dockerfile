@@ -1,8 +1,8 @@
 FROM python:3.9-slim-buster as production
 
-ENV PYTHONPATH "${PYTHONPATH}:/bot"
+ENV PYTHONPATH "${PYTHONPATH}:/app"
 
-WORKDIR /bot
+WORKDIR /app
 
 # Install Poetry
 RUN set +x \
@@ -15,6 +15,6 @@ RUN set +x \
  && rm -rf /var/lib/apt/lists/*
 
 # Add code & install dependencies
-ADD . /bot/
+ADD . /app/
 RUN poetry install -n --no-dev
 CMD ["python -O -m bot"]
