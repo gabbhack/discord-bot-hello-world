@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "discord-bot-hello-world"
+version = "0.1.0"
+description = ""
+authors = ["Gabben <43146729+gabbhack@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+discord = "^1.7.3"
+aiohttp = "^3.7.4"
+pydantic = "^1.8.2"
+envparse = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
