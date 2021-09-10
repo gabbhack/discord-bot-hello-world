@@ -2,7 +2,7 @@ from aiohttp import ClientResponseError
 from discord import Embed
 from discord.ext import commands
 
-from core import img
+from .core import img
 
 @commands.command()
 async def img(ctx, arg):

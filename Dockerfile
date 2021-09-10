@@ -17,4 +17,4 @@ RUN set +x \
 # Add code & install dependencies
 ADD . /bot/
 RUN poetry install -n --no-dev
-CMD ["exec python -O -m bot"]
+CMD ["python -O -m bot"]
